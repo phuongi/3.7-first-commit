@@ -5,3 +5,4 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+	Product.create(:name => "Mountain Bikes", :description => "are a sub-category of cruiser bikes.", :colour => "white & green", :price => "43€")
