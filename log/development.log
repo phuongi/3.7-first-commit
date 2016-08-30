@@ -1594,3 +1594,503 @@ Processing by ProductsController#index as HTML
 Completed 200 OK in 606ms (Views: 448.9ms | ActiveRecord: 24.3ms)
 
 
+Started GET "/products" for 10.0.2.2 at 2016-08-24 21:22:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (7.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 448ms (Views: 384.0ms | ActiveRecord: 7.4ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for 10.0.2.2 at 2016-08-30 19:48:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#landing_page as HTML
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering static_pages/landing_page within layouts/application
+  Rendered static_pages/landing_page within layouts/application (0.3ms)
+Completed 200 OK in 1732ms (Views: 1638.4ms | ActiveRecord: 5.7ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for 10.0.2.2 at 2016-08-30 20:29:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#landing_page as HTML
+  [1m[36mProduct Load (2.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering static_pages/landing_page within layouts/application
+  Rendered static_pages/landing_page within layouts/application (0.3ms)
+Started GET "/" for 10.0.2.2 at 2016-08-30 20:29:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#landing_page as HTML
+  [1m[36mProduct Load (3.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering static_pages/landing_page within layouts/application
+  Rendered static_pages/landing_page within layouts/application (0.3ms)
+Completed 200 OK in 1473ms (Views: 1363.7ms | ActiveRecord: 9.0ms)
+
+
+Completed 200 OK in 197ms (Views: 157.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/products/1" for 10.0.2.2 at 2016-08-30 20:31:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (1.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 153ms (Views: 110.7ms | ActiveRecord: 1.4ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/products/1" for 10.0.2.2 at 2016-08-30 20:35:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/products/1"):
+  
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:131:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:20:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `catch'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:36:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:26:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sprockets-rails-3.1.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/static.rb:136:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/engine.rb:522:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (20.1ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (52.2ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (101.8ms)
+Started GET "/products/1" for 10.0.2.2 at 2016-08-30 20:36:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/products/1"):
+  
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:131:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:20:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `catch'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:36:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:26:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sprockets-rails-3.1.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/static.rb:136:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/engine.rb:522:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered collection of /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (2.7ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (35.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/products/1" for 10.0.2.2 at 2016-08-30 20:37:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/products/1"):
+  
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:131:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:20:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `catch'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:36:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:26:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sprockets-rails-3.1.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/static.rb:136:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/engine.rb:522:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered collection of /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (6.0ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (44.1ms)
+Started GET "/products/1" for 10.0.2.2 at 2016-08-30 20:41:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/products/1"):
+  
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:131:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:20:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `catch'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:36:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:26:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sprockets-rails-3.1.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/static.rb:136:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/engine.rb:522:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (3.6ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.5ms)
+Started GET "/" for 10.0.2.2 at 2016-08-30 20:41:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#landing_page as HTML
+  [1m[36mProduct Load (1.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  Rendered static_pages/landing_page.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 162ms (Views: 112.3ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/orders" for 10.0.2.2 at 2016-08-30 20:41:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrdersController#index as HTML
+  Rendering orders/index.html.erb within layouts/application
+  Rendered orders/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 149ms (Views: 116.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landing_page" for 10.0.2.2 at 2016-08-30 20:42:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/landing_page"):
+  
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:131:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:20:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `catch'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:36:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:26:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sprockets-rails-3.1.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/static.rb:136:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/engine.rb:522:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (2.7ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (33.6ms)
+Started GET "/" for 10.0.2.2 at 2016-08-30 20:49:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#landing_page as HTML
+  [1m[36mProduct Load (2.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  Rendered static_pages/landing_page.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 208ms (Views: 178.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/products" for 10.0.2.2 at 2016-08-30 20:52:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/products"):
+  
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:131:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:20:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `catch'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:36:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:26:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sprockets-rails-3.1.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/static.rb:136:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/engine.rb:522:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered collection of /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (2.6ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.5ms)
+Started GET "/static_pages/landing_page" for 10.0.2.2 at 2016-08-30 20:53:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#landing_page as HTML
+  [1m[36mProduct Load (2.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  Rendered static_pages/landing_page.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 164ms (Views: 138.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/static_pages/orders" for 10.0.2.2 at 2016-08-30 20:54:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/static_pages/orders"):
+  
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:131:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:20:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `catch'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:36:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:26:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sprockets-rails-3.1.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/static.rb:136:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/engine.rb:522:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered collection of /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (3.5ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (39.0ms)
+Started GET "/orders" for 10.0.2.2 at 2016-08-30 20:54:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrdersController#index as HTML
+  Rendering orders/index.html.erb within layouts/application
+  Rendered orders/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 157ms (Views: 132.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/1" for 10.0.2.2 at 2016-08-30 20:54:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/products/1"):
+  
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:131:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:20:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `catch'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:36:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:26:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sprockets-rails-3.1.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/static.rb:136:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/engine.rb:522:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered collection of /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (4.2ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (44.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for 10.0.2.2 at 2016-08-30 20:58:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#landing_page as HTML
+  [1m[36mProduct Load (3.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  Rendered static_pages/landing_page.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 220ms (Views: 144.8ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-08-30 20:58:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#landing_page as HTML
+  [1m[36mProduct Load (3.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  Rendered static_pages/landing_page.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 146ms (Views: 115.0ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-08-30 20:58:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#landing_page as HTML
+  [1m[36mProduct Load (1.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  Rendered static_pages/landing_page.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 146ms (Views: 129.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/products" for 10.0.2.2 at 2016-08-30 20:58:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 164ms (Views: 135.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/products/11" for 10.0.2.2 at 2016-08-30 20:58:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (1.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 155ms (Views: 129.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/products/11/edit" for 10.0.2.2 at 2016-08-30 20:58:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (71.2ms)
+  Rendered products/edit.html.erb within layouts/application (104.0ms)
+Completed 200 OK in 268ms (Views: 239.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/products/11" for 10.0.2.2 at 2016-08-30 20:59:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (1.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 159ms (Views: 134.6ms | ActiveRecord: 1.3ms)
+
+
