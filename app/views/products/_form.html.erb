@@ -11,15 +11,21 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </div>
+<%= form_tag("/products", method: "get") do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
+ <div class="field">
+  <label for="product_name">Name</label><br>
+  <input id="product_name" name="product[name]" type="text" />
+</div>
 
   <div class="field">
-    <%= f.label :description %>
-    <%= f.text_area :description %>
-  </div>
+  <%= f.label :description %><br>
+  <%= f.text_area :description %>
+</div>
 
   <div class="field">
     <%= f.label :image_url %>
@@ -38,5 +44,9 @@
   <div class="field">
   <%= f.label :price %><br>
   <%= f.text_field :price %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
   </div>
 <% end %>
