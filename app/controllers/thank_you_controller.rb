@@ -2,6 +2,9 @@
  	def index
  	end
 
+ 	def show
+ 	end
+
  	def thank_you
      @name = params[:name]
      @email = params[:email]
