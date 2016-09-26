@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :users
   resources :products, :invoices, :orders, :users
   resources :orders, only: [:index, :show, :create, :destroy]
+  resources :products, :users
 
   get 'static_pages/about'
 
