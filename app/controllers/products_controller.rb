@@ -78,4 +78,8 @@ end
       params.require(:product).permit(:name, :description, :image_url, :colour, :price)
     end
 
+    # GET /product_reviews/1
+    def show
+    end
+
 end
