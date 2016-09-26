@@ -53,6 +53,14 @@
   <h1>Welcome to Our Bike-shop</h1>
   <h2>You can find your favourite bicycles here!</h2>
 
+ <% if alert %>
+    <p id="alert" class="alert alert-info"><%= alert %></p>
+ <% end %>
+
+ <% if notice %>
+    <p id="notice" class="alert alert-info"><%= notice %></p>
+ <% end %>
+
  <%= yield %>
 
   <footer>
