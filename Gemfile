@@ -20,6 +20,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'cancancan', '~> 1.10'
 gem 'devise'
 
+gem 'will_paginate', '~> 3.1.1'
+
 group :development, :test do
   gem 'sqlite3'
 end
