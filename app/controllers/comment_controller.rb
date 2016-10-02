@@ -2,7 +2,7 @@ class CommentsController < ApplicationController
 
  def create
     @product = Product.find(params[:product_id])
-    @comment = @product.comment.new(comment_params)
+    @comment = @product.comments.new(comment_params)
     @comment.user = current_user
     respond_to do |format|
       if @comment.save
@@ -15,7 +15,7 @@ class CommentsController < ApplicationController
     end
   end
 
-  @comment = @product.comment.new(params[:comment])
+  @comment = @product.comments.new(params[:comment])
 
   def destroy
     @comment = Comment.find(params[:id])

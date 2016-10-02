@@ -7780,3 +7780,55 @@ Processing by ProductsController#edit as HTML
 Completed 200 OK in 208ms (Views: 180.5ms | ActiveRecord: 3.9ms)
 
 
+Started GET "/" for 10.0.2.2 at 2016-10-01 20:57:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" for 10.0.2.2 at 2016-10-01 20:57:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#landing_page as HTML
+  [1m[36mProduct Load (1.9ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 1730ms (Views: 1585.1ms | ActiveRecord: 10.1ms)
+
+
+Processing by StaticPagesController#landing_page as HTML
+  [1m[36mProduct Load (2.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (1.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 265ms (Views: 183.9ms | ActiveRecord: 12.8ms)
+
+
+Started GET "/products" for 10.0.2.2 at 2016-10-01 20:58:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 195ms (Views: 164.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/products/7" for 10.0.2.2 at 2016-10-01 20:58:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProduct Load (2.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 7]]
+  Rendered products/show.html.erb within layouts/application (79.3ms)
+Completed 200 OK in 281ms (Views: 228.9ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/products/8/edit" for 10.0.2.2 at 2016-10-01 20:58:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (1.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (225.6ms)
+  Rendered products/edit.html.erb within layouts/application (244.5ms)
+Completed 200 OK in 441ms (Views: 421.6ms | ActiveRecord: 1.8ms)
+
+
