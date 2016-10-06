@@ -8,7 +8,7 @@ def create
     charge = Stripe::Charge.create(
       :amount => 1000, # amount in cents, again
       :currency => "Euro",
-      :source => http://careerfoundry.com/images/bike.jpg,
+      :source => "http://careerfoundry.com/images/bike.jpg",
       :description => params[:stripeEmail]
     )
 
