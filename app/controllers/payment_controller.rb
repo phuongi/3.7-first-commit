@@ -3,7 +3,7 @@ class PaymentsController < ApplicationController
 def create
   @product = Product.find(params[:product_id])
   @payment.user = current_user
-  redirect_to product_path(@product)
+  redirect_to product
   # Create the charge on Stripe's servers - this will charge the user's card
   begin
     charge = Stripe::Charge.create(
@@ -21,6 +21,5 @@ def create
   rescue Stripe::CardError => e
     # The card has been declined
   end
-
 end
 
