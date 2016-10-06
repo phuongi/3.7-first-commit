@@ -11,7 +11,7 @@ def create
       :source => "http://careerfoundry.com/images/bike.jpg",
       :description => params[:stripeEmail]
     )
-
+  end
     if charge.paid
       Order.create(:user_id, :product_id) 
     end
@@ -19,6 +19,7 @@ def create
   rescue Stripe::CardError => e
     # The card has been declined
   end
+
 redirect_to product
 end
 
