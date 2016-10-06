@@ -23,4 +23,3 @@ def create
 redirect_to product
 end
 
-end
