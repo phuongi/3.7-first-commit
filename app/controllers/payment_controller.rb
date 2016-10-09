@@ -1,7 +1,7 @@
 class PaymentsController < ApplicationController
 before_action :find_user_object
 def create
-    @product = Product.find(params[:product_id])
+    @product.id = Product.find(params[:product_id])
     @payment.user = current_user
     # Create the charge on Stripe's servers - this will charge the user's card
   begin
@@ -16,6 +16,7 @@ def create
     if charge.paid
       Order.create(:user_id, :product_id) 
     end
+end
 
   rescue Stripe::CardError => e
     # The card has been declined
