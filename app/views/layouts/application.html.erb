@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <title>Nameofapp</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -50,7 +51,11 @@
   </div>
   </nav>
 
+  <% cache do %>
+  <% sleep 2 %>
   <h1>Welcome to Our Bike-shop</h1>
+  <% end %>
+  
   <h2>You can find your favourite bicycles here!</h2>
 
  <% if alert %>

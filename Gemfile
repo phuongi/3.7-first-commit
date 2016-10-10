@@ -39,5 +39,6 @@ end
 gem 'rails-controller-testing'
 gem 'stripe'
 gem 'chosen-rails'
+gem 'redis-rails'
 
 

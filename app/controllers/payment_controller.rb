@@ -3,6 +3,7 @@ before_action :find_user_object
 def create
     @product = Product.find(params[:product_id])
     @payment.user = current_user
+    redirect_to @product
     # Create the charge on Stripe's servers - this will charge the user's card
   begin
     charge = Stripe::Charge.create(
