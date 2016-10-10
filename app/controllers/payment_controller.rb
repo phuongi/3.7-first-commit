@@ -22,5 +22,5 @@ end
   rescue Stripe::CardError => e
     # The card has been declined
   end
-end
+
 
