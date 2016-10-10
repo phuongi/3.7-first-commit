@@ -9155,3 +9155,88 @@ ZMOgbGRh
 Completed 200 OK in 3309ms (Views: 2221.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/products" for 10.0.2.2 at 2016-10-10 16:05:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (2.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (31.6ms)
+Completed 200 OK in 2728ms (Views: 2646.5ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/products/13" for 10.0.2.2 at 2016-10-10 16:05:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mProduct Load (1.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 13]]
+  Rendered shared/_stripe_checkout_button.html.erb (0.4ms)
+  Rendered products/show.html.erb within layouts/application (100.0ms)
+Completed 200 OK in 2363ms (Views: 2333.5ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/square-image.png" for 10.0.2.2 at 2016-10-10 16:05:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/square-image.png"):
+  
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:131:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:20:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `catch'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:36:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:26:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sprockets-rails-3.1.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/static.rb:136:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/engine.rb:522:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered collection of /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [81 times] (34.4ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (78.4ms)
+Started GET "/products/12/edit" for 10.0.2.2 at 2016-10-10 16:05:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mProduct Load (1.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (61.6ms)
+  Rendered products/edit.html.erb within layouts/application (142.1ms)
+Completed 200 OK in 2424ms (Views: 2393.5ms | ActiveRecord: 1.4ms)
+
+
+Started PATCH "/products/12" for 10.0.2.2 at 2016-10-10 16:06:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xrrZGqTW8yS5xcXPNwAjlBqMca9SyXwwJQqTggNWo9vy34uL1cGBTwvgHKqyJ8APNxVm9K1j40O4CzUFKZ0mfg==", "product"=>{"name"=>"", "description"=>"are a sub-category of cruiser bikes.", "image_url"=>"", "colour"=>"white & green", "price"=>"43€", "comments"=>"lkjflafa"}, "commit"=>"Update Product", "id"=>"12"}
+  [1m[36mProduct Load (1.9ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+Unpermitted parameter: comments
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.3ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (4.5ms)
+  Rendered products/edit.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 2265ms (Views: 2247.9ms | ActiveRecord: 5.3ms)
+
+

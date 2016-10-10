@@ -58,6 +58,6 @@ RSpec.configure do |config|
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
 RSpec.configure do |config|
-  config.include Chosen::Rspec::FeatureHelpers, type: :feature
+ config.include Chosen::Rspec::FeatureHelpers, type: :feature
 end
 end

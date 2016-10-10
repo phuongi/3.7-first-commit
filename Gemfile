@@ -27,6 +27,7 @@ group :development, :test do
 end
 group :development do
   gem 'web-console'
+  gem 'byebug'
 end
 group :production do
   gem 'pg'
@@ -36,6 +37,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   gem 'factory_girl_rails', '~> 4.0'
 end
+
 gem 'rails-controller-testing'
 gem 'stripe'
 gem 'chosen-rails'
