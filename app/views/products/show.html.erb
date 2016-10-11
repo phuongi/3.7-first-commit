@@ -36,6 +36,8 @@
 <%= form_tag "/payments/create" do %>
   <%= render partial: "shared/stripe_checkout_button" %>
 <% end %>
+<div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
+
 <%= image_tag(@product.image_url, width: "350", class: "img-zoom") %>
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
