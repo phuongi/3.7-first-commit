@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
   resources :users
-  resources :products, :invoices, :orders, :users
+  
   resources :orders, only: [:index, :show, :create, :destroy]
-  resources :products, :users
+ 
   mount ActionCable.server => '/cable'
 
   get 'static_pages/about'
@@ -18,6 +18,8 @@ Rails.application.routes.draw do
 
   post 'static_pages/thank_you'
 
-    
+  resources :products do
+   resources :comments
+  end 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
