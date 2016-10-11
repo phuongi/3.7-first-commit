@@ -42,5 +42,6 @@ gem 'rails-controller-testing'
 gem 'stripe'
 gem 'chosen-rails'
 gem 'redis-rails'
+gem 'ratyrate'
 
 

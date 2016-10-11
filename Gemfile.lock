@@ -140,6 +140,7 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (11.2.2)
+    ratyrate (1.2.2.alpha)
     redis (3.3.1)
     redis-actionpack (5.0.0)
       actionpack (>= 4.0.0, < 6)
@@ -239,6 +240,7 @@ DEPENDENCIES
   rails (~> 5.0.0)
   rails-controller-testing
   rails_12factor
+  ratyrate
   redis-rails
   rspec-rails (~> 3.5)
   sass-rails (~> 5.0)

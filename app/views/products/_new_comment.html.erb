@@ -6,8 +6,9 @@
     <%= f.text_area :body %>
   </p>
 
-  <p>
+  <p><%= f.label :rating %><br>
     <div class="rating"></div>
+    <%= f.text_field :rating, class: "rating" %>
   </p>  
     <p>
       <%= f.submit "Submit" %>
