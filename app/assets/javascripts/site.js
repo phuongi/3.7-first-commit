@@ -1,13 +1,9 @@
-$(document).on('turbolinks:load', function(){
-    $('.rating').raty();
-});
-
-$(document).on('turbolinks:load', function(){
+$(document).on('turbolinks:load', function () { // All your code here });
     $('.rating').raty( { path: '/assets', scoreName: 'comment[rating]' });
     $('.rated').raty({ path: '/assets',
       readOnly: true,
       score: function() {
-        return $(this).attr('data-score');
-      }
+            return $('img[src*="star-on"]',$(this)).length;
+       }
     });
 });

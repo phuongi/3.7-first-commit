@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161011165138) do
+ActiveRecord::Schema.define(version: 20161012182904) do
 
   create_table "average_caches", force: :cascade do |t|
     t.integer  "rater_id"
@@ -79,6 +79,15 @@ ActiveRecord::Schema.define(version: 20161011165138) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.index ["cacheable_id", "cacheable_type"], name: "index_rating_caches_on_cacheable_id_and_cacheable_type"
+  end
+
+  create_table "ratings", force: :cascade do |t|
+    t.integer  "comment_id"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["comment_id"], name: "index_ratings_on_comment_id"
+    t.index ["user_id"], name: "index_ratings_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

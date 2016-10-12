@@ -20,7 +20,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'cancancan', '~> 1.10'
 gem 'devise'
 
-gem 'will_paginate', '~> 3.1.1'
+## Gemfile for Rails 3+, Sinatra, and Merb
+gem 'will_paginate', '~> 3.1.0'
 
 group :development, :test do
   gem 'sqlite3'
@@ -43,5 +44,3 @@ gem 'stripe'
 gem 'chosen-rails'
 gem 'redis-rails'
 gem 'ratyrate'
-
-

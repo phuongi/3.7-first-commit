@@ -13,3 +13,4 @@
 //= require jquery_ujs
 //= require chosen-jquery
 //= require scaffold
+//= require jquery.raty.js

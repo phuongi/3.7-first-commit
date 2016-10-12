@@ -1,6 +1,7 @@
 class Comment < ApplicationRecord
   belongs_to :user
   belongs_to :product
+  has_many :ratings
   scope :rating_desc, -> { order(rating: :desc) }
 
   validates :body, presence: true
