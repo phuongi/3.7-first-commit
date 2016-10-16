@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :users
   resources :orders, only: [:index, :show, :create, :destroy]
  
-  mount ActionCable.server => '/cable'
+  #mount ActionCable.server => '/cable'
 
   get 'static_pages/about'
 
@@ -12,8 +12,8 @@ Rails.application.routes.draw do
 
   get 'static_pages/index'
 
-  get '/products/:id', to: 'products#show'
-
+  get 'static_pages/landing_page'
+  
   root 'static_pages#landing_page'
 
   post 'static_pages/thank_you'

@@ -15,7 +15,7 @@ end
   # GET /products/1
   # GET /products/1.json
   def show
-    @comments = @product.comments.order("created_at DESC")
+    @comments = @product.comments.order("created_at DESC").paginate(page: params[:page], per_page: 3) 
   end
 
   # GET /products/new
@@ -78,9 +78,4 @@ end
     def product_params
       params.require(:product).permit(:name, :description, :image_url, :colour, :price)
     end
-
-    # GET /product_reviews/1
-    def show
-    end
-
 end

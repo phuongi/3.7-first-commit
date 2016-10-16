@@ -3,7 +3,7 @@ class ProductChannel < ApplicationCable::Channel
 ActionCable.server.broadcast 'product_channel', comment: "Hello World"
   def subscribed
     # stream_from "some_channel"
-   	 stream_from "product_channel"
+   	 # stream_from "product_channel"
   end
 
   def unsubscribed

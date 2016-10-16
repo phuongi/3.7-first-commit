@@ -14,3 +14,4 @@
 //= require chosen-jquery
 //= require scaffold
 //= require jquery.raty.js
+//= require_tree .

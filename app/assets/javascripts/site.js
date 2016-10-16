@@ -3,7 +3,9 @@ $(document).ready(function() { // All your code here });
     $('.rated').raty({ path: '/assets',
       readOnly: true,
       score: function() {
-            return $('img[src*="star-on"]',$(this)).length;
+            return $(this).attr('data-score');
        }
     });
+
+    $('.img-zoom').elevateZoom();
 });
