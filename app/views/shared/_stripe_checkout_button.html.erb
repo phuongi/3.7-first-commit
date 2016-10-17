@@ -1,8 +1,8 @@
 <script
   src="https://checkout.stripe.com/checkout.js" class="stripe-button"
   data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-  data-image="/img.wallpaperfolder.com/f/5F984B30AC2C/mountain-lion.jpg"
-  data-name="Mountain Bikes"
-  data-description="are design for riding rough off-road trails."
-  data-amount="100">
+  data-image="<%= @product.image_url %>"
+  data-name="<%= @product.name %>"
+  data-description="<%= @product.description %>"
+  data-amount="<%= (@product.price * 100).to_i %>">
 </script>
