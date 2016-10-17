@@ -2,8 +2,7 @@ class CommentUpdateJob < ApplicationJob
   queue_as :default
 
   def perform(comment, current_user)
-  ProductChannel.broadcast_to comment.product_id, comment: render_comment(comment, current_user)
-  ProductChannel.broadcast_to @product.id, comment: CommentsController.render(partial: 'comments/comment', locals: {comment: @comment})
+    ProductChannel.broadcast_to comment.product_id, comment: render_comment(comment, current_user)
   end
 
 private
