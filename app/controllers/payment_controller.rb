@@ -17,7 +17,7 @@ def create
     if charge.paid
       Order.create(:user_id, :product_id) 
     end
-end
+  end
 
   rescue Stripe::CardError => e
     # The card has been declined
