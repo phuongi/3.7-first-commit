@@ -21889,3 +21889,1968 @@ ActionController::RoutingError (No route matches [GET] "/square-image.png"):
   Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
   Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (54.1ms)
 Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 14:01:44 +0000
+Started GET "/" for 10.0.2.2 at 2016-10-17 15:24:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" for 10.0.2.2 at 2016-10-17 15:24:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#landing_page as HTML
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (1.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (4.5ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2413ms (Views: 2348.7ms | ActiveRecord: 14.0ms)
+
+
+Processing by StaticPagesController#landing_page as HTML
+  [1m[36mProduct Load (1.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (2.6ms)
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2447ms (Views: 2378.6ms | ActiveRecord: 14.8ms)
+
+
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 15:24:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:24:09 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+[ActionCable] Broadcasting to product_channel: {:comment=>"Hello World"}
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products" for 10.0.2.2 at 2016-10-17 15:24:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (7.0ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2364ms (Views: 2328.4ms | ActiveRecord: 3.2ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:24:22 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 15:24:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:24:23 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products/10" for 10.0.2.2 at 2016-10-17 15:24:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mProduct Load (1.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mComment Load (2.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["product_id", 10], ["LIMIT", 3], ["OFFSET", 0]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 10]]
+  Rendered products/_comments.html.erb (50.0ms)
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 10]]
+  [1m[36mComment Load (1.5ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY "comments"."rating" DESC LIMIT ?[0m  [["product_id", 10], ["LIMIT", 1]]
+  Rendered shared/_stripe_checkout_button.html.erb (0.7ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/_new_comment.html.erb (7.8ms)
+  Rendered products/show.html.erb within layouts/application (131.6ms)
+Completed 200 OK in 2508ms (Views: 2435.2ms | ActiveRecord: 17.5ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:24:28 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 15:24:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:24:29 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 15:35:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:35:36 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:35:38 +0000
+Started GET "/products/10" for 10.0.2.2 at 2016-10-17 15:36:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mProduct Load (1.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mComment Load (3.1ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["product_id", 10], ["LIMIT", 3], ["OFFSET", 0]]
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 10]]
+  Rendered products/_comments.html.erb (20.5ms)
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 10]]
+  [1m[36mComment Load (2.0ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY "comments"."rating" DESC LIMIT ?[0m  [["product_id", 10], ["LIMIT", 1]]
+  Rendered shared/_stripe_checkout_button.html.erb (0.7ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/_new_comment.html.erb (5.7ms)
+  Rendered products/show.html.erb within layouts/application (112.4ms)
+Completed 200 OK in 2562ms (Views: 2513.1ms | ActiveRecord: 13.9ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:36:47 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 15:36:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:36:49 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:37:20 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 15:37:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:37:20 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products/10" for 10.0.2.2 at 2016-10-17 15:37:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mProduct Load (4.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mComment Load (2.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["product_id", 10], ["LIMIT", 3], ["OFFSET", 0]]
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 10]]
+  Rendered products/_comments.html.erb (17.0ms)
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 10]]
+  [1m[36mComment Load (1.6ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY "comments"."rating" DESC LIMIT ?[0m  [["product_id", 10], ["LIMIT", 1]]
+  Rendered shared/_stripe_checkout_button.html.erb (1.1ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/_new_comment.html.erb (4.8ms)
+  Rendered products/show.html.erb within layouts/application (103.0ms)
+Completed 200 OK in 2497ms (Views: 2458.0ms | ActiveRecord: 15.2ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:37:25 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 15:37:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:37:26 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:38:04 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 15:38:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:38:04 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products/11" for 10.0.2.2 at 2016-10-17 15:38:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (2.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mComment Load (2.0ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["product_id", 11], ["LIMIT", 3], ["OFFSET", 0]]
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 11]]
+  Rendered products/_comments.html.erb (16.8ms)
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 11]]
+  [1m[36mComment Load (2.0ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY "comments"."rating" DESC LIMIT ?[0m  [["product_id", 11], ["LIMIT", 1]]
+  Rendered shared/_stripe_checkout_button.html.erb (0.8ms)
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/_new_comment.html.erb (7.2ms)
+  Rendered products/show.html.erb within layouts/application (118.9ms)
+Completed 200 OK in 2529ms (Views: 2494.8ms | ActiveRecord: 15.3ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:38:09 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 15:38:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:38:09 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 15:39:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:39:22 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+[ActionCable] Broadcasting to product_channel: {:comment=>"Hello World"}
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products/11" for 10.0.2.2 at 2016-10-17 15:39:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (1.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mComment Load (2.1ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["product_id", 11], ["LIMIT", 3], ["OFFSET", 0]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 11]]
+  Rendered products/_comments.html.erb (76.8ms)
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 11]]
+  [1m[36mComment Load (7.5ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY "comments"."rating" DESC LIMIT ?[0m  [["product_id", 11], ["LIMIT", 1]]
+  Rendered shared/_stripe_checkout_button.html.erb (0.6ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/_new_comment.html.erb (44.2ms)
+  Rendered products/show.html.erb within layouts/application (217.2ms)
+Completed 200 OK in 8664ms (Views: 8452.4ms | ActiveRecord: 29.2ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:40:03 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 15:40:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:40:05 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started POST "/payments/create" for 10.0.2.2 at 2016-10-17 15:40:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant PaymentsController):
+  
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/inflector/methods.rb:268:in `const_get'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/inflector/methods.rb:268:in `block in constantize'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/inflector/methods.rb:266:in `each'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/inflector/methods.rb:266:in `inject'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/inflector/methods.rb:266:in `constantize'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/http/request.rb:93:in `controller_class'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/routing/route_set.rb:44:in `controller'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/routing/route_set.rb:30:in `serve'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/journey/router.rb:39:in `block in serve'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/journey/router.rb:26:in `each'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/journey/router.rb:26:in `serve'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/routing/route_set.rb:725:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/warden-1.2.6/lib/warden/manager.rb:35:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/warden-1.2.6/lib/warden/manager.rb:34:in `catch'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/warden-1.2.6/lib/warden/manager.rb:34:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/etag.rb:25:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/conditional_get.rb:38:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/head.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/session/abstract/id.rb:222:in `context'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/session/abstract/id.rb:216:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/cookies.rb:613:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.0.0/lib/active_record/migration.rb:552:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/callbacks.rb:90:in `run_callbacks'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:131:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:20:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `catch'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:36:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:26:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sprockets-rails-3.1.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/static.rb:136:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/engine.rb:522:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.5ms)
+  Rendered collection of /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [51 times] (40.9ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (30.0ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.8ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (150.4ms)
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:40:47 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 15:45:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+NameError (undefined local variable or method `payment' for #<ActionDispatch::Routing::Mapper:0x007f22ad45d338>):
+  
+config/routes.rb:21:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (113.2ms)
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 15:45:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:45:17 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products/10" for 10.0.2.2 at 2016-10-17 15:45:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/products/10"):
+  
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:131:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:20:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `catch'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:36:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:26:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sprockets-rails-3.1.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/static.rb:136:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/engine.rb:522:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered collection of /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [34 times] (9.4ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (42.8ms)
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:45:18 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 15:45:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:45:21 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products/12" for 10.0.2.2 at 2016-10-17 15:45:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/products/12"):
+  
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:131:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:20:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `catch'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:36:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:26:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sprockets-rails-3.1.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/static.rb:136:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/engine.rb:522:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [34 times] (10.1ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (41.1ms)
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:45:23 +0000
+Started GET "/products/1" for 10.0.2.2 at 2016-10-17 15:46:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/products/1"):
+  
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:131:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:20:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `catch'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:36:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:26:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sprockets-rails-3.1.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/static.rb:136:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/engine.rb:522:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered collection of /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [34 times] (13.9ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (52.0ms)
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 15:46:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:46:53 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products" for 10.0.2.2 at 2016-10-17 15:46:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/products"):
+  
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:131:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:20:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `catch'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:36:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:26:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sprockets-rails-3.1.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/static.rb:136:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/engine.rb:522:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [34 times] (13.3ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (45.5ms)
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:46:54 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 15:46:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:46:58 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products" for 10.0.2.2 at 2016-10-17 15:47:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/products"):
+  
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:131:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:20:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `catch'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:36:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:26:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sprockets-rails-3.1.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/static.rb:136:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/engine.rb:522:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered collection of /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [34 times] (8.4ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (39.6ms)
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:47:04 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 15:48:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:48:08 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started GET "/" for 10.0.2.2 at 2016-10-17 15:48:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#landing_page as HTML
+  [1m[36mProduct Load (4.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (4.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (11.7ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3054ms (Views: 2848.4ms | ActiveRecord: 28.6ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:48:34 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 15:48:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:48:36 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products" for 10.0.2.2 at 2016-10-17 15:48:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/products"):
+  
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:131:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:20:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `catch'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:36:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:26:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sprockets-rails-3.1.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/static.rb:136:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/engine.rb:522:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered collection of /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [34 times] (11.3ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (42.0ms)
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:48:40 +0000
+Started GET "/products" for 10.0.2.2 at 2016-10-17 15:48:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/products"):
+  
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:131:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:20:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `catch'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:36:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:26:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sprockets-rails-3.1.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/static.rb:136:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/engine.rb:522:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered collection of /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [34 times] (11.1ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (42.4ms)
+Started GET "/products" for 10.0.2.2 at 2016-10-17 15:48:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/products"):
+  
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:131:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:20:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `catch'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:36:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:26:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sprockets-rails-3.1.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/static.rb:136:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/engine.rb:522:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered collection of /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [34 times] (10.7ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (45.7ms)
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 15:49:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:49:01 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products" for 10.0.2.2 at 2016-10-17 15:49:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/products"):
+  
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:131:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:20:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `catch'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:36:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:26:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sprockets-rails-3.1.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/static.rb:136:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/engine.rb:522:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered collection of /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [34 times] (10.2ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (50.9ms)
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:49:07 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 15:49:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:49:24 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products" for 10.0.2.2 at 2016-10-17 15:49:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/products"):
+  
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:131:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:20:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `catch'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:36:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:26:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sprockets-rails-3.1.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/static.rb:136:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/engine.rb:522:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [34 times] (9.9ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (42.6ms)
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:49:33 +0000
+Started GET "/" for 10.0.2.2 at 2016-10-17 15:56:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (7.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#landing_page as HTML
+  [1m[36mProduct Load (6.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (2.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (27.3ms)
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 4527ms (Views: 4147.6ms | ActiveRecord: 48.8ms)
+
+
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 15:56:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:56:25 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+[ActionCable] Broadcasting to product_channel: {:comment=>"Hello World"}
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products" for 10.0.2.2 at 2016-10-17 15:56:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (4.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (17.5ms)
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2897ms (Views: 2813.7ms | ActiveRecord: 7.0ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:56:51 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 15:56:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:56:52 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products/9" for 10.0.2.2 at 2016-10-17 15:56:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mProduct Load (1.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mComment Load (1.8ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["product_id", 9], ["LIMIT", 3], ["OFFSET", 0]]
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 9]]
+  Rendered products/_comments.html.erb (88.2ms)
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 9]]
+  [1m[36mComment Load (1.4ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY "comments"."rating" DESC LIMIT ?[0m  [["product_id", 9], ["LIMIT", 1]]
+  Rendered shared/_stripe_checkout_button.html.erb (0.8ms)
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/_new_comment.html.erb (48.3ms)
+  Rendered products/show.html.erb within layouts/application (209.9ms)
+Completed 200 OK in 2739ms (Views: 2598.7ms | ActiveRecord: 19.1ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:56:57 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 15:56:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 15:56:58 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (5.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started POST "/payment/create" for 10.0.2.2 at 2016-10-17 15:57:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+LoadError (Unable to autoload constant PaymentController, expected /vagrant/app/controllers/payment_controller.rb to define it):
+  
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/dependencies.rb:512:in `load_missing_constant'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/dependencies.rb:203:in `const_missing'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/inflector/methods.rb:268:in `const_get'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/inflector/methods.rb:268:in `block in constantize'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/inflector/methods.rb:266:in `each'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/inflector/methods.rb:266:in `inject'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/inflector/methods.rb:266:in `constantize'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/dependencies.rb:583:in `get'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/dependencies.rb:614:in `constantize'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/http/request.rb:93:in `controller_class'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/routing/route_set.rb:44:in `controller'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/routing/route_set.rb:30:in `serve'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/journey/router.rb:39:in `block in serve'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/journey/router.rb:26:in `each'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/journey/router.rb:26:in `serve'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/routing/route_set.rb:725:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/warden-1.2.6/lib/warden/manager.rb:35:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/warden-1.2.6/lib/warden/manager.rb:34:in `catch'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/warden-1.2.6/lib/warden/manager.rb:34:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/etag.rb:25:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/conditional_get.rb:38:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/head.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/session/abstract/id.rb:222:in `context'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/session/abstract/id.rb:216:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/cookies.rb:613:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.0.0/lib/active_record/migration.rb:552:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/callbacks.rb:90:in `run_callbacks'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:131:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:20:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `catch'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:36:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:26:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sprockets-rails-3.1.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/static.rb:136:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/engine.rb:522:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.7ms)
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:05:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:05:21 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started POST "/payment/create" for 10.0.2.2 at 2016-10-17 16:05:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+LoadError (Unable to autoload constant PaymentController, expected /vagrant/app/controllers/payment_controller.rb to define it):
+  
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/dependencies.rb:512:in `load_missing_constant'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/dependencies.rb:203:in `const_missing'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/inflector/methods.rb:268:in `const_get'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/inflector/methods.rb:268:in `block in constantize'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/inflector/methods.rb:266:in `each'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/inflector/methods.rb:266:in `inject'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/inflector/methods.rb:266:in `constantize'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/dependencies.rb:583:in `get'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/dependencies.rb:614:in `constantize'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/http/request.rb:93:in `controller_class'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/routing/route_set.rb:44:in `controller'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/routing/route_set.rb:30:in `serve'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/journey/router.rb:39:in `block in serve'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/journey/router.rb:26:in `each'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/journey/router.rb:26:in `serve'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/routing/route_set.rb:725:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/warden-1.2.6/lib/warden/manager.rb:35:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/warden-1.2.6/lib/warden/manager.rb:34:in `catch'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/warden-1.2.6/lib/warden/manager.rb:34:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/etag.rb:25:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/conditional_get.rb:38:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/head.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/session/abstract/id.rb:222:in `context'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/session/abstract/id.rb:216:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/cookies.rb:613:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.0.0/lib/active_record/migration.rb:552:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/callbacks.rb:90:in `run_callbacks'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:131:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:20:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `catch'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:36:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:26:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sprockets-rails-3.1.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/static.rb:136:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/engine.rb:522:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.3ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.6ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (102.3ms)
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:05:46 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:06:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:06:22 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (7.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:06:23 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:06:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:06:23 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products/11" for 10.0.2.2 at 2016-10-17 16:06:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (2.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mComment Load (1.5ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["product_id", 11], ["LIMIT", 3], ["OFFSET", 0]]
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 11]]
+  Rendered products/_comments.html.erb (49.1ms)
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 11]]
+  [1m[36mComment Load (2.0ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY "comments"."rating" DESC LIMIT ?[0m  [["product_id", 11], ["LIMIT", 1]]
+  Rendered shared/_stripe_checkout_button.html.erb (0.8ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/_new_comment.html.erb (6.3ms)
+  Rendered products/show.html.erb within layouts/application (126.0ms)
+Completed 200 OK in 2621ms (Views: 2499.9ms | ActiveRecord: 24.5ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:06:28 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:06:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:06:29 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started POST "/payment/create" for 10.0.2.2 at 2016-10-17 16:06:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+LoadError (Unable to autoload constant PaymentController, expected /vagrant/app/controllers/payment_controller.rb to define it):
+  
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/dependencies.rb:512:in `load_missing_constant'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/dependencies.rb:203:in `const_missing'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/inflector/methods.rb:268:in `const_get'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/inflector/methods.rb:268:in `block in constantize'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/inflector/methods.rb:266:in `each'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/inflector/methods.rb:266:in `inject'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/inflector/methods.rb:266:in `constantize'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/dependencies.rb:583:in `get'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/dependencies.rb:614:in `constantize'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/http/request.rb:93:in `controller_class'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/routing/route_set.rb:44:in `controller'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/routing/route_set.rb:30:in `serve'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/journey/router.rb:39:in `block in serve'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/journey/router.rb:26:in `each'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/journey/router.rb:26:in `serve'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/routing/route_set.rb:725:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/warden-1.2.6/lib/warden/manager.rb:35:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/warden-1.2.6/lib/warden/manager.rb:34:in `catch'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/warden-1.2.6/lib/warden/manager.rb:34:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/etag.rb:25:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/conditional_get.rb:38:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/head.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/session/abstract/id.rb:222:in `context'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/session/abstract/id.rb:216:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/cookies.rb:613:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.0.0/lib/active_record/migration.rb:552:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/callbacks.rb:90:in `run_callbacks'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:131:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:20:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `catch'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:36:in `call_app'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `block in call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:26:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/tagged_logging.rb:70:in `tagged'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/rack/logger.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sprockets-rails-3.1.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.0.0/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/static.rb:136:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/engine.rb:522:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+/home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.4ms)
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:06:52 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:07:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:07:33 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:07:33 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:07:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:07:33 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+[ActionCable] Broadcasting to product_channel: {:comment=>"Hello World"}
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products" for 10.0.2.2 at 2016-10-17 16:07:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (2.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (38.7ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3673ms (Views: 3603.9ms | ActiveRecord: 9.6ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:07:40 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:07:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:07:42 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (10.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products/5" for 10.0.2.2 at 2016-10-17 16:07:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduct Load (1.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mComment Load (1.9ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["product_id", 5], ["LIMIT", 3], ["OFFSET", 0]]
+  Rendered products/_comments.html.erb (5.2ms)
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 5]]
+  [1m[36mComment Load (2.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY "comments"."rating" DESC LIMIT ?[0m  [["product_id", 5], ["LIMIT", 1]]
+  Rendered shared/_stripe_checkout_button.html.erb (0.6ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/_new_comment.html.erb (77.1ms)
+  Rendered products/show.html.erb within layouts/application (175.0ms)
+Completed 200 OK in 2681ms (Views: 2528.4ms | ActiveRecord: 14.6ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:07:47 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:07:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:07:47 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started POST "/payment/create" for 10.0.2.2 at 2016-10-17 16:08:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PaymentController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+h6TKgKoU947N2xMykvvcpZ5aG0OyQfVjBzg71p3ihiBYvxZa3dKMgfXAykK93dS1b1NnHMs1V4KylFCUt7U4A==", "stripeToken"=>"tok_195dgcEyBSuXv4bKmyLUkH8I", "stripeTokenType"=>"card", "stripeEmail"=>"namphuongle8@gmail.com"}
+  [1m[36mProduct Load (1.9ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 58ms (ActiveRecord: 13.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=):
+  
+app/controllers/payment_controller.rb:4:in `create'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.4ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.2ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (42.2ms)
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:10:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:10:48 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:10:49 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:10:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:10:50 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products/11" for 10.0.2.2 at 2016-10-17 16:10:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (1.9ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mComment Load (2.7ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["product_id", 11], ["LIMIT", 3], ["OFFSET", 0]]
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 11]]
+  Rendered products/_comments.html.erb (70.9ms)
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 11]]
+  [1m[36mComment Load (2.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY "comments"."rating" DESC LIMIT ?[0m  [["product_id", 11], ["LIMIT", 1]]
+  Rendered shared/_stripe_checkout_button.html.erb (0.8ms)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/_new_comment.html.erb (7.6ms)
+  Rendered products/show.html.erb within layouts/application (155.3ms)
+Completed 200 OK in 2584ms (Views: 2499.4ms | ActiveRecord: 19.8ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:10:54 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:10:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:10:55 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started POST "/payment/create" for 10.0.2.2 at 2016-10-17 16:11:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PaymentController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Rs0y/0yqsyF4OzpBjQQpcjypn5DNZF53rsJM6xGIMbo9sV2MJXWqzUTbVSRNuLFSf226YbCBjPwoFP1GGSFvQg==", "product_id"=>"11", "stripeToken"=>"tok_195djjEyBSuXv4bKPIRavuGF", "stripeTokenType"=>"card", "stripeEmail"=>"namphuongle8@gmail.com"}
+  [1m[36mProduct Load (10.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 17.0ms)
+
+
+  
+NoMethodError (undefined method `user=' for nil:NilClass):
+  
+app/controllers/payment_controller.rb:5:in `create'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (16.5ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.7ms)
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:11:19 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:21:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:21:13 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started POST "/payment/create" for 10.0.2.2 at 2016-10-17 16:21:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PaymentController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Rs0y/0yqsyF4OzpBjQQpcjypn5DNZF53rsJM6xGIMbo9sV2MJXWqzUTbVSRNuLFSf226YbCBjPwoFP1GGSFvQg==", "product_id"=>"11", "stripeToken"=>"tok_195dtmEyBSuXv4bKCNJXRJEp", "stripeTokenType"=>"card", "stripeEmail"=>"namphuongle8@gmail.com"}
+  [1m[36mProduct Load (9.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 15.3ms)
+
+
+  
+NoMethodError (undefined method `user=' for nil:NilClass):
+  
+app/controllers/payment_controller.rb:5:in `create'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.0ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.9ms)
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:21:41 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:22:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:22:54 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (17.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started DELETE "/logout" for 10.0.2.2 at 2016-10-17 16:22:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Rs0y/0yqsyF4OzpBjQQpcjypn5DNZF53rsJM6xGIMbo9sV2MJXWqzUTbVSRNuLFSf226YbCBjPwoFP1GGSFvQg=="}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.8ms)[0m  [1m[33mUPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_created_at", nil], ["updated_at", 2016-10-17 16:22:58 UTC], ["id", 1]]
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 37ms (ActiveRecord: 11.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-10-17 16:22:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#landing_page as HTML
+  [1m[36mProduct Load (3.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (1.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 2412ms (Views: 2381.9ms | ActiveRecord: 4.6ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:23:00 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:23:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:23:01 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:23:01 +0000
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:23:01 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:23:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:23:07 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:23:07 +0000
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:23:07 +0000
+Started GET "/login" for 10.0.2.2 at 2016-10-17 16:23:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (126.8ms)
+Completed 200 OK in 2548ms (Views: 2530.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:23:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:23:11 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:23:11 +0000
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:23:11 +0000
+Started POST "/login" for 10.0.2.2 at 2016-10-17 16:23:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dYJVn5MvvZ2IkRA5ZQB62zmUypIaoi+QZ/Iybv1zy8QN4pCfqf1n0Of4YahixQPKAz9ukpll89Qrkw3gKDuSag==", "user"=>{"email"=>"namphuongle8@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "namphuongle8@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.2ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", 2016-10-17 16:23:13 UTC], ["last_sign_in_at", 2016-10-16 17:52:31 UTC], ["sign_in_count", 5], ["updated_at", 2016-10-17 16:23:13 UTC], ["id", 1]]
+  [1m[35m (15.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 366ms (ActiveRecord: 21.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-10-17 16:23:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#landing_page as HTML
+  [1m[36mProduct Load (4.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (1.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2412ms (Views: 2377.2ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:23:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:23:16 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products" for 10.0.2.2 at 2016-10-17 16:23:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (2.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (7.4ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2399ms (Views: 2374.0ms | ActiveRecord: 3.7ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:23:27 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:23:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:23:27 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products/6" for 10.0.2.2 at 2016-10-17 16:23:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (1.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mComment Load (1.6ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["product_id", 6], ["LIMIT", 3], ["OFFSET", 0]]
+  Rendered products/_comments.html.erb (3.2ms)
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 6]]
+  [1m[36mComment Load (1.7ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY "comments"."rating" DESC LIMIT ?[0m  [["product_id", 6], ["LIMIT", 1]]
+  Rendered shared/_stripe_checkout_button.html.erb (0.5ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/_new_comment.html.erb (4.6ms)
+  Rendered products/show.html.erb within layouts/application (76.5ms)
+Completed 200 OK in 2445ms (Views: 2411.2ms | ActiveRecord: 7.7ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:23:32 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:23:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:23:32 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started POST "/payment/create" for 10.0.2.2 at 2016-10-17 16:23:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PaymentController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z2w+VJ4+cX3lA3QL4wzyvOutue1UDHV9/r559rNlROMBclkr7Yf9oyzxJ7cDk9H+s6WzawDIeqAiBsJbzy0YZw==", "product_id"=>"6", "stripeToken"=>"tok_195dvvEyBSuXv4bKzJ5Uujco", "stripeTokenType"=>"card", "stripeEmail"=>"namphuongle8@gmail.com"}
+  [1m[36mProduct Load (4.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 8.7ms)
+
+
+  
+NoMethodError (undefined method `user=' for nil:NilClass):
+  
+app/controllers/payment_controller.rb:5:in `create'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.9ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.7ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (106.9ms)
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:23:55 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:23:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:23:57 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:28:37 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:28:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:28:37 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products/5" for 10.0.2.2 at 2016-10-17 16:28:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduct Load (1.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mComment Load (1.7ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["product_id", 5], ["LIMIT", 3], ["OFFSET", 0]]
+  Rendered products/_comments.html.erb (4.0ms)
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 5]]
+  [1m[36mComment Load (1.9ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY "comments"."rating" DESC LIMIT ?[0m  [["product_id", 5], ["LIMIT", 1]]
+  Rendered shared/_stripe_checkout_button.html.erb (0.7ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/_new_comment.html.erb (5.4ms)
+  Rendered products/show.html.erb within layouts/application (85.6ms)
+Completed 200 OK in 2484ms (Views: 2449.3ms | ActiveRecord: 8.2ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:28:42 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:28:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:28:43 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started POST "/payment/create" for 10.0.2.2 at 2016-10-17 16:29:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PaymentController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ebgr9rCWb6OzNjIrXjiTBarPOXkVp4jiV+JMQoQqAOIfpkyJwy/jfXrEYZe+p7BH8scz/0Fjhz+LWvfv+GJcZg==", "product_id"=>"5", "stripeToken"=>"tok_195e0yEyBSuXv4bKmojtKy6Z", "stripeTokenType"=>"card", "stripeEmail"=>"namphuongle8@gmail.com"}
+  [1m[36mProduct Load (3.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 7.5ms)
+
+
+  
+NoMethodError (undefined method `user=' for nil:NilClass):
+  
+app/controllers/payment_controller.rb:5:in `create'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (14.8ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.3ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.8ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (120.3ms)
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:29:08 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:31:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:31:20 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:31:21 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:31:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:31:22 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products/9" for 10.0.2.2 at 2016-10-17 16:31:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mProduct Load (1.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mComment Load (1.7ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["product_id", 9], ["LIMIT", 3], ["OFFSET", 0]]
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 9]]
+  Rendered products/_comments.html.erb (15.8ms)
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 9]]
+  [1m[36mComment Load (1.8ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY "comments"."rating" DESC LIMIT ?[0m  [["product_id", 9], ["LIMIT", 1]]
+  Rendered shared/_stripe_checkout_button.html.erb (0.6ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/_new_comment.html.erb (6.4ms)
+  Rendered products/show.html.erb within layouts/application (97.9ms)
+Completed 200 OK in 2494ms (Views: 2457.4ms | ActiveRecord: 11.5ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:31:28 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:31:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:31:28 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started POST "/payment/create" for 10.0.2.2 at 2016-10-17 16:31:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PaymentController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qpiEqPvNtqvcMGU/ID0FrghUnDgPIVl1AAPTp143L9PMhuPXiHQ6dRXCNoPAoibsUFyWvlvlVqjcu2gKIn9zVw==", "product_id"=>"9", "stripeToken"=>"tok_195e3gEyBSuXv4bKVPtrrR3j", "stripeTokenType"=>"card", "stripeEmail"=>"namphuongle8@gmail.com"}
+  [1m[36mProduct Load (4.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 10.3ms)
+
+
+  
+NoMethodError (undefined method `user=' for nil:NilClass):
+  
+app/controllers/payment_controller.rb:5:in `create'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.3ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.2ms)
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:31:56 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:35:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:35:17 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started POST "/payment/create" for 10.0.2.2 at 2016-10-17 16:35:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PaymentController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qpiEqPvNtqvcMGU/ID0FrghUnDgPIVl1AAPTp143L9PMhuPXiHQ6dRXCNoPAoibsUFyWvlvlVqjcu2gKIn9zVw==", "product_id"=>"9", "stripeToken"=>"tok_195e7LEyBSuXv4bKsXqJvQXE", "stripeTokenType"=>"card", "stripeEmail"=>"namphuongle8@gmail.com"}
+  [1m[36mProduct Load (6.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 9.6ms)
+
+
+  
+NoMethodError (undefined method `user=' for nil:NilClass):
+  
+app/controllers/payment_controller.rb:5:in `create'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.9ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.0ms)
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:35:43 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:36:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:36:15 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:36:17 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:36:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:36:18 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products/11" for 10.0.2.2 at 2016-10-17 16:36:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (1.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mComment Load (2.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["product_id", 11], ["LIMIT", 3], ["OFFSET", 0]]
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 11]]
+  Rendered products/_comments.html.erb (23.6ms)
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 11]]
+  [1m[36mComment Load (2.0ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY "comments"."rating" DESC LIMIT ?[0m  [["product_id", 11], ["LIMIT", 1]]
+  Rendered shared/_stripe_checkout_button.html.erb (0.7ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/_new_comment.html.erb (4.8ms)
+  Rendered products/show.html.erb within layouts/application (151.2ms)
+Completed 200 OK in 2543ms (Views: 2491.2ms | ActiveRecord: 11.0ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:36:22 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:36:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:36:23 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started POST "/payment/create" for 10.0.2.2 at 2016-10-17 16:36:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PaymentController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K7RkXQGlLSaNTW7LiljmMsfz3SetvIgZWNPtWKUuW6hNqgMichyh+ES/PXdqx8Vwn/vXofl4h8SEa1b12WYHLA==", "product_id"=>"11", "stripeToken"=>"tok_195e8KEyBSuXv4bKbJn9VyeP", "stripeTokenType"=>"card", "stripeEmail"=>"namphuongle8@gmail.com"}
+  [1m[36mProduct Load (2.9ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 5.6ms)
+
+
+  
+NoMethodError (undefined method `user=' for nil:NilClass):
+  
+app/controllers/payment_controller.rb:5:in `create'
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.9ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
+  Rendering /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.8ms)
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:36:44 +0000
+Started GET "/" for 10.0.2.2 at 2016-10-17 16:38:18 +0000
+Started GET "/" for 10.0.2.2 at 2016-10-17 16:38:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#landing_page as HTML
+Processing by StaticPagesController#landing_page as HTML
+  [1m[36mProduct Load (1.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mProduct Load (2.9ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (1.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  [1m[36mProduct Load (1.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 3]]
+  Rendered static_pages/landing_page.html.erb within layouts/application (25.6ms)
+  Rendered static_pages/landing_page.html.erb within layouts/application (5.6ms)
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (6.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 5031ms (Views: 4840.8ms | ActiveRecord: 10.6ms)
+
+
+Completed 200 OK in 5055ms (Views: 4882.9ms | ActiveRecord: 22.7ms)
+
+
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:38:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:38:24 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+[ActionCable] Broadcasting to product_channel: {:comment=>"Hello World"}
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products" for 10.0.2.2 at 2016-10-17 16:38:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (2.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (23.3ms)
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2507ms (Views: 2478.1ms | ActiveRecord: 4.4ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:38:31 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:38:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:38:32 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products/10" for 10.0.2.2 at 2016-10-17 16:38:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mProduct Load (1.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mComment Load (2.7ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["product_id", 10], ["LIMIT", 3], ["OFFSET", 0]]
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 10]]
+  Rendered products/_comments.html.erb (99.9ms)
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 10]]
+  [1m[36mComment Load (1.5ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY "comments"."rating" DESC LIMIT ?[0m  [["product_id", 10], ["LIMIT", 1]]
+  Rendered shared/_stripe_checkout_button.html.erb (1.2ms)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/_new_comment.html.erb (56.8ms)
+  Rendered products/show.html.erb within layouts/application (254.6ms)
+Completed 200 OK in 2878ms (Views: 2717.5ms | ActiveRecord: 24.3ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:38:38 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:38:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:38:39 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started POST "/payment/create" for 10.0.2.2 at 2016-10-17 16:39:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PaymentController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Sv4aSO5J1v+QuciO/nkwNeR00KQRM/znKWvywZ1NGbos4H03nfBaIVlLmzIe5hN3vHzaIkX38zr100ls4QVFPg==", "product_id"=>"10", "stripeToken"=>"tok_195eAZEyBSuXv4bKAczLLWlU", "stripeTokenType"=>"card", "stripeEmail"=>"namphuongle8@gmail.com"}
+  [1m[36mProduct Load (10.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (6.3ms)[0m  [1m[32mINSERT INTO "orders" DEFAULT VALUES[0m
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+No template found for PaymentController#create, rendering head :no_content
+Completed 204 No Content in 3313ms (ActiveRecord: 38.5ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:40:17 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:40:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:40:18 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (6.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products/11" for 10.0.2.2 at 2016-10-17 16:40:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (2.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mComment Load (1.7ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["product_id", 11], ["LIMIT", 3], ["OFFSET", 0]]
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 11]]
+  Rendered products/_comments.html.erb (20.6ms)
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 11]]
+  [1m[36mComment Load (3.9ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY "comments"."rating" DESC LIMIT ?[0m  [["product_id", 11], ["LIMIT", 1]]
+  Rendered shared/_stripe_checkout_button.html.erb (1.2ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/_new_comment.html.erb (8.9ms)
+  Rendered products/show.html.erb within layouts/application (130.0ms)
+Completed 200 OK in 2639ms (Views: 2586.8ms | ActiveRecord: 17.9ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:40:23 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:40:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:40:24 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started POST "/payment/create" for 10.0.2.2 at 2016-10-17 16:40:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PaymentController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TG0dq/DYebmjMZ/v4rKnv5wD+2MbOQ1da85gDkqMYYIqc3rUg2H1Z2rDzFMCLYT9xAvx5U/9AoC3dtujNsQ9Bg==", "product_id"=>"11", "stripeToken"=>"tok_195eCQEyBSuXv4bK38hQZ1I9", "stripeTokenType"=>"card", "stripeEmail"=>"namphuongle8@gmail.com"}
+  [1m[36mProduct Load (3.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (14.6ms)[0m  [1m[32mINSERT INTO "orders" DEFAULT VALUES[0m
+  [1m[35m (17.2ms)[0m  [1m[36mcommit transaction[0m
+No template found for PaymentController#create, rendering head :no_content
+Completed 204 No Content in 2660ms (ActiveRecord: 38.2ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:47:40 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:47:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:47:41 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products/12" for 10.0.2.2 at 2016-10-17 16:47:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mProduct Load (1.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mComment Load (2.4ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["product_id", 12], ["LIMIT", 3], ["OFFSET", 0]]
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 12]]
+  Rendered products/_comments.html.erb (17.6ms)
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 12]]
+  [1m[36mComment Load (2.8ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY "comments"."rating" DESC LIMIT ?[0m  [["product_id", 12], ["LIMIT", 1]]
+  Rendered shared/_stripe_checkout_button.html.erb (0.5ms)
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/_new_comment.html.erb (6.5ms)
+  Rendered products/show.html.erb within layouts/application (132.1ms)
+Completed 200 OK in 2601ms (Views: 2551.1ms | ActiveRecord: 14.7ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:47:47 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:47:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:47:48 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started POST "/payment/create" for 10.0.2.2 at 2016-10-17 16:48:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PaymentController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GOnT9fRB9oDTEiOU/Y86Kzqd4JftdXnWmuZp0p9qTRl+97SKh/h6XhrgcCgdEBlpYpXqEbmxdgtGXtJ/4yIRnQ==", "product_id"=>"12", "stripeToken"=>"tok_195eJQEyBSuXv4bKgWvMRaki", "stripeTokenType"=>"card", "stripeEmail"=>"namphuongle8@gmail.com"}
+  [1m[36mProduct Load (3.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (13.7ms)[0m  [1m[32mINSERT INTO "orders" DEFAULT VALUES[0m
+  [1m[35m (22.1ms)[0m  [1m[36mcommit transaction[0m
+No template found for PaymentController#create, rendering head :no_content
+Completed 204 No Content in 2703ms (ActiveRecord: 41.7ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:50:43 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:50:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:50:44 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products/11" for 10.0.2.2 at 2016-10-17 16:50:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (1.9ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mComment Load (2.0ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["product_id", 11], ["LIMIT", 3], ["OFFSET", 0]]
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 11]]
+  Rendered products/_comments.html.erb (19.3ms)
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 11]]
+  [1m[36mComment Load (1.9ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY "comments"."rating" DESC LIMIT ?[0m  [["product_id", 11], ["LIMIT", 1]]
+  Rendered shared/_stripe_checkout_button.html.erb (0.8ms)
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/_new_comment.html.erb (6.7ms)
+  Rendered products/show.html.erb within layouts/application (124.3ms)
+Completed 200 OK in 2662ms (Views: 2615.2ms | ActiveRecord: 14.4ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:50:48 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:50:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:50:49 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started POST "/payment/create" for 10.0.2.2 at 2016-10-17 16:51:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PaymentController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KtBQGpNcJX2kHF6c7BOgjxVLYKIv06ZvXlKNSHJe3mJMzjdl4OWpo23uDSAMjIPNTUNqJHsXqbKC6jblDhaC5g==", "product_id"=>"11", "stripeToken"=>"tok_195eMQEyBSuXv4bKxIB4HHm2", "stripeTokenType"=>"card", "stripeEmail"=>"namphuongle8@gmail.com"}
+  [1m[36mProduct Load (2.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (8.3ms)[0m  [1m[32mINSERT INTO "orders" DEFAULT VALUES[0m
+  [1m[35m (9.6ms)[0m  [1m[36mcommit transaction[0m
+No template found for PaymentController#create, rendering head :no_content
+Completed 204 No Content in 2590ms (ActiveRecord: 22.9ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:55:06 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:55:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:55:07 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started GET "/products/11" for 10.0.2.2 at 2016-10-17 16:55:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (2.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mComment Load (2.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["product_id", 11], ["LIMIT", 3], ["OFFSET", 0]]
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 11]]
+  Rendered products/_comments.html.erb (23.5ms)
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 11]]
+  [1m[36mComment Load (6.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY "comments"."rating" DESC LIMIT ?[0m  [["product_id", 11], ["LIMIT", 1]]
+  Rendered shared/_stripe_checkout_button.html.erb (0.6ms)
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/_new_comment.html.erb (6.1ms)
+  Rendered products/show.html.erb within layouts/application (131.4ms)
+Completed 200 OK in 2603ms (Views: 2549.7ms | ActiveRecord: 23.8ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:55:12 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:55:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:55:13 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation
+Started POST "/payment/create" for 10.0.2.2 at 2016-10-17 16:55:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PaymentController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+YwVnT02NHv23odKFLXC8qj0/5FhqgogNF84X7jVwC6fknLiTo+4pT8s1Pb0KuGw8Pz1FzVuBf3o54PyxJ2cqg==", "product_id"=>"11", "stripeToken"=>"tok_195eQaEyBSuXv4bKuKiwDzf2", "stripeTokenType"=>"card", "stripeEmail"=>"namphuongle8@gmail.com"}
+  [1m[36mProduct Load (8.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (5.6ms)[0m  [1m[32mINSERT INTO "orders" DEFAULT VALUES[0m
+  [1m[35m (21.0ms)[0m  [1m[36mcommit transaction[0m
+  Rendering payment/create.html.erb within layouts/application
+  Rendered payment/create.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 4307ms (Views: 2535.6ms | ActiveRecord: 36.5ms)
+
+
+Finished "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:55:41 +0000
+Started GET "/cable" for 10.0.2.2 at 2016-10-17 16:55:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 10.0.2.2 at 2016-10-17 16:55:41 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZGVtby9Vc2VyLzE)
+ProductChannel is transmitting the subscription confirmation

@@ -18,7 +18,7 @@ Rails.application.routes.draw do
 
   post 'static_pages/thank_you'
 
-  post "payments/create"
+  post 'payment/create'
 
   resources :products do
    resources :comments
